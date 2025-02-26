@@ -1,0 +1,100 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+$primary: #4f46e5;
+$input-focus-box-shadow: 0 0 0 0.1rem rgba($primary, 0.5);
+$input-border-width: 2px;
+$input-focus-border-color: $primary;
+$form-check-input-checked-bg-color: $primary;
+$form-check-input-checked-border-color: $primary;
+
+$accordion-button-padding-x: .5rem;
+
+$badge-bg: #f3f4f6;
+$badge-color: #374151;
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    border-radius: 100%;
+    border: 1px solid transparent;
+
+    &.badge-success {
+        background-color: #d1fae5;
+        color: #059669;
+        font-weight: 700;
+    }
+
+    &.badge-warning {
+        background-color: #fefcbf;
+        color: #d97706;
+        border-color: #fef9c3;
+    }
+
+    &.badge-danger {
+        background-color: #fee2e2;
+        color: #dc2626;
+        border-color: #fecaca;
+    }
+
+
+}
+
+.btn-transparent {
+    border-radius: 100%;
+    border: none;
+    height: 1.6rem;
+    width: 1.6rem;
+    padding: 0;
+    svg {
+        margin: .3rem;
+        width: 1rem;
+        height: 1rem;    }
+
+    &:hover {
+        svg {
+            stroke: white;
+        }
+    }
+
+    &:focus,
+    &:active,
+    &:focus-visible {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 0;
+    }
+}
+
+.btn-svg-danger {
+    background-color: #fdebed;
+    svg {
+        stroke: #e74c3c;
+    }
+    &:hover {
+        background-color: #e74c3c;
+    }
+}
+
+.btn-svg-success {
+    background-color: #d1fae5;
+    svg {
+        stroke: #059669;
+    }
+    &:hover {
+        background-color: #059669;
+    }
+}
+
+
+
