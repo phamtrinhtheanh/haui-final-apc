@@ -3,9 +3,13 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('dashboard');
-});
+Route::get('/admin/dashboard', function () {
+    return view('admin.index');
+})->name('admin.dashboard');
+
+Route::get('/admin/brand', function () {
+    return view('admin.brand');
+})->name('admin.brand');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

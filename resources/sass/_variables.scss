@@ -1,11 +1,16 @@
 // Body
 $body-bg: #f8fafc;
 
+$apc-background-color: f5f7fa;
+
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
+body {
+    font-family: $font-family-sans-serif;
+}
 
 $primary: #4f46e5;
 $input-focus-box-shadow: 0 0 0 0.1rem rgba($primary, 0.5);
@@ -13,8 +18,6 @@ $input-border-width: 2px;
 $input-focus-border-color: $primary;
 $form-check-input-checked-bg-color: $primary;
 $form-check-input-checked-border-color: $primary;
-
-$accordion-button-padding-x: .5rem;
 
 $badge-bg: #f3f4f6;
 $badge-color: #374151;
@@ -46,8 +49,34 @@ $badge-color: #374151;
         color: #dc2626;
         border-color: #fecaca;
     }
+    &.badge-info {
+        background-color: #bfdbfe;  // Màu xanh sáng hơn
+        color: #0d6efd;  // Chữ đậm hơn
+        border-color: #93c5fd;  // Viền nổi bật hơn
+    }
 
+    &.badge-dark {
+        background-color: #1f2937;
+        color: #f9fafb;
+        border-color: #111827;
+    }
 
+    &.badge-light {
+        background-color: #f3f4f6;
+        color: #374151;
+        border-color: #d1d5db;
+    }
+
+    &.badge-purple {
+        background-color: #ede9fe;
+        color: #7c3aed;
+        border-color: #c4b5fd;
+    }
+
+}
+
+.thead {
+    font-weight: 500;
 }
 
 .btn-transparent {
@@ -96,5 +125,9 @@ $badge-color: #374151;
     }
 }
 
+.btn-sm-short {
+    padding: 0;
+    font-size: 1rem !important;
+}
 
-
+$table-hover-bg: $apc-background-color;
